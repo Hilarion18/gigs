@@ -12,8 +12,9 @@ import { Store } from './stores/store';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/home/HomeScreen';
-import FoodForm from './screens/foodForm';
+import GigList from './screens/gigList';
 import FoodList from './screens/foodList';
+import LoginScreen from './screens/login/LoginScreen'
 // import configureStore from './src/store';
 
 // const store = configureStore();
@@ -22,13 +23,14 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <Provider store={Store}>
+      {/* <LoginScreen/> */}
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="FoodForm"
-            component={FoodForm}
+            name="GigList"
+            component={GigList}
             options={{
-              title: 'Gigs',
+              title: 'Gigs Indonesia',
               headerTintColor: 'orange',
               headerStyle: {
                 backgroundColor: 'black'

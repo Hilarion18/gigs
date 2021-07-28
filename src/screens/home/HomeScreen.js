@@ -28,7 +28,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import FoodForm from '../foodForm';
+import GigList from '../gigList';
 import FoodList from '../foodList';
 
 const Section = ({children, title}): Node => {

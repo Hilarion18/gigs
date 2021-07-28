@@ -10,7 +10,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { addFood } from '../actions/food';
 
-const FoodForm = ({ navigation }) => {
+const GigList = ({ navigation }) => {
 
   const [food, setFood] = useState('')
 
@@ -80,4 +80,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default FoodForm;
+export default GigList;
